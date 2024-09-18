@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent
   ,IonFab, IonFabButton,IonIcon
  } from '@ionic/angular/standalone';
@@ -13,5 +14,9 @@ import { IonHeader, IonToolbar, IonTitle, IonContent
   ],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private router:Router) {}
+
+  irAMaterias() {
+    this.router.navigate(['/materias']);
+  }
 }
