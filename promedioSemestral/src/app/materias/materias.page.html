@@ -18,7 +18,7 @@
   <!--Contenido del Menú-->
   <ion-content>
     <ion-list>
-      <ion-item routerLink="/home" routerDirection="root">
+      <ion-item>
         <ion-label>Inicio</ion-label>
       </ion-item>
 
@@ -49,7 +49,11 @@
           <ion-input class="inputs" label="Código de la materia" labelPlacement="floating" fill="outline"></ion-input>
           <ion-input class="inputs" label="Horario" labelPlacement="floating" fill="outline"></ion-input>
           <ion-input class="inputs" label="Observaciones" labelPlacement="floating" fill="outline"></ion-input>
-          <ion-button>Crear materia</ion-button>
+
+          <div class="btnContenedor">
+            <ion-button class="btnCard">Crear materia</ion-button>
+            <ion-button class="btnCard">Eliminar materia</ion-button>
+          </div>
 
         </form>
       </ion-card-content>
