@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar,
   IonCard, IonCardTitle,IonCardContent, IonInput, IonButton, IonButtons,
-  IonMenuButton, IonMenu, IonList, IonItem, IonLabel
+  IonMenuButton, IonMenu, IonList, IonItem, IonLabel, IonAlert
 
  } from '@ionic/angular/standalone';
  import { Router } from '@angular/router';
@@ -15,7 +15,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
     IonCard, IonCardTitle,IonCardContent, IonInput, IonButton, IonButtons,
-    IonMenuButton, IonMenu, IonList, IonItem, IonLabel
+    IonMenuButton, IonMenu, IonList, IonItem, IonLabel, IonAlert
   ]
 })
 export class NotasPage implements OnInit {

@@ -29,14 +29,6 @@
 
 <!--Contenido Principal-->
 <ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title size="large">Materias</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
 
   <div class="contenedorCard">
     <ion-card>
@@ -51,7 +43,7 @@
 
           <div class="btnContenedor">
             <ion-button class="btnCard">Crear materia</ion-button>
-            <ion-button class="btnCard">Eliminar materia</ion-button>
+            <ion-button class="btnCard" id="AlertaInicial">Eliminar materia</ion-button>
           </div>
 
         </form>
@@ -59,6 +51,18 @@
     </ion-card>
 
   </div>
+
+  <ion-alert
+  trigger="AlertaInicial"
+  header="¿Eliminar materia?"
+  message="¿Esta segur@ que quiere eliminar esta materia?"
+  [buttons]="['Sí', 'No']"></ion-alert>
+
+  <ion-alert
+  trigger="MateriaConNotas"
+  header="Eliminación de materia fallida"
+  message="No ha sido posible eliminar la materia porque tiene notas registradas"
+  [buttons]="['ok']"></ion-alert>
 
 
 </ion-content>

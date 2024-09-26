@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar,
   IonCard,IonCardContent, IonCardTitle, IonInput, IonButton,
   IonButtons, IonMenuButton,IonMenu, IonList,IonItem, IonLabel, IonIcon,
-  IonRouterLink
+  IonRouterLink, IonAlert
  } from '@ionic/angular/standalone';
  import { Router } from '@angular/router';
 //import { IonMenu } from '@ionic/angular';
@@ -16,7 +16,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
     IonCard,IonCardContent,IonCardTitle, IonInput, IonButton, IonButtons,
-    IonMenuButton, IonMenu, IonList,IonItem, IonLabel,IonIcon,IonRouterLink
+    IonMenuButton, IonMenu, IonList,IonItem, IonLabel,IonIcon,IonRouterLink, IonAlert
   ]
 })
 export class MateriasPage implements OnInit {

@@ -45,13 +45,15 @@
       <ion-card-content>
         <form>
           <ion-input class="inputs" label="Nota" labelPlacement="floating" fill="outline" type="number"></ion-input>
+          <p>Campo opcional</p>
           <ion-input class="inputs" label="Fecha de entrega" labelPlacement="floating" fill="outline"></ion-input>
           <ion-input class="inputs" label="Descripción" labelPlacement="floating" fill="outline"></ion-input>
           <ion-input class="inputs" label="Observaciones" labelPlacement="floating" fill="outline"></ion-input>
+          <p>Campo opcional</p>
 
           <div class="btnContenedor">
             <ion-button class="btnCard">Crear nota</ion-button>
-            <ion-button class="btnCard">Eliminar nota</ion-button>
+            <ion-button class="btnCard" id="AlertaInicialNota">Eliminar nota</ion-button>
           </div>
 
         </form>
@@ -59,4 +61,10 @@
     </ion-card>
 
   </div>
+
+  <ion-alert
+  trigger="AlertaInicialNota"
+  header="¿Eliminar Nota?"
+  message="¿Esta segur@ que quiere eliminar esta nota?"
+  [buttons]="['Sí', 'No']"></ion-alert>
 </ion-content>
