@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent
-  ,IonFab, IonFabButton,IonIcon, IonSearchbar
+  ,IonFab, IonFabButton,IonIcon, IonSearchbar, IonButtons, IonMenuButton,
+  IonMenu, IonList, IonItem, IonLabel
  } from '@ionic/angular/standalone';
 
 @Component({
@@ -10,7 +11,8 @@ import { IonHeader, IonToolbar, IonTitle, IonContent
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [IonHeader, IonToolbar, IonTitle, IonContent,
-    IonFab, IonFabButton,IonIcon, IonSearchbar
+    IonFab, IonFabButton,IonIcon, IonSearchbar, IonButtons, IonMenuButton,
+    IonMenu, IonList, IonItem, IonLabel
   ],
 })
 export class HomePage {
@@ -19,4 +21,5 @@ export class HomePage {
   irAMaterias() {
     this.router.navigate(['/materias']);
   }
+
 }

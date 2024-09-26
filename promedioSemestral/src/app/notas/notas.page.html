@@ -1,0 +1,62 @@
+<ion-header id="menu2" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--Menú-->
+<ion-menu contentId="menu2">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!--Contenido del Menú-->
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="irAInicio()">
+        <ion-label>Inicio</ion-label>
+      </ion-item>
+
+      <ion-item (click)="irACrearMateria()">
+        <ion-label>Crear Materia</ion-label>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+
+<!--Contenido de Notas-->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Notas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="contenedorCard">
+    <ion-card>
+      <ion-card-title>Creación Nota</ion-card-title>
+      <ion-card-content>
+        <form>
+          <ion-input class="inputs" label="Nota" labelPlacement="floating" fill="outline" type="number"></ion-input>
+          <ion-input class="inputs" label="Fecha de entrega" labelPlacement="floating" fill="outline"></ion-input>
+          <ion-input class="inputs" label="Descripción" labelPlacement="floating" fill="outline"></ion-input>
+          <ion-input class="inputs" label="Observaciones" labelPlacement="floating" fill="outline"></ion-input>
+
+          <div class="btnContenedor">
+            <ion-button class="btnCard">Crear nota</ion-button>
+            <ion-button class="btnCard">Eliminar nota</ion-button>
+          </div>
+
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

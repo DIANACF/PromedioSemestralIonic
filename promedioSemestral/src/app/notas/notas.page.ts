@@ -2,24 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar,
-  IonCard,IonCardContent, IonCardTitle, IonInput, IonButton,
-  IonButtons, IonMenuButton,IonMenu, IonList,IonItem, IonLabel, IonIcon,
-  IonRouterLink
+  IonCard, IonCardTitle,IonCardContent, IonInput, IonButton, IonButtons,
+  IonMenuButton, IonMenu, IonList, IonItem, IonLabel
+
  } from '@ionic/angular/standalone';
  import { Router } from '@angular/router';
-//import { IonMenu } from '@ionic/angular';
 
 @Component({
-  selector: 'app-materias',
-  templateUrl: './materias.page.html',
-  styleUrls: ['./materias.page.scss'],
+  selector: 'app-notas',
+  templateUrl: './notas.page.html',
+  styleUrls: ['./notas.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonCard,IonCardContent,IonCardTitle, IonInput, IonButton, IonButtons,
-    IonMenuButton, IonMenu, IonList,IonItem, IonLabel,IonIcon,IonRouterLink
+    IonCard, IonCardTitle,IonCardContent, IonInput, IonButton, IonButtons,
+    IonMenuButton, IonMenu, IonList, IonItem, IonLabel
   ]
 })
-export class MateriasPage implements OnInit {
+export class NotasPage implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -27,6 +26,9 @@ export class MateriasPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
+  irACrearMateria() {
+    this.router.navigate(['/materias']);
+  }
 
   ngOnInit() {
   }
